@@ -1,13 +1,95 @@
+<!doctype html>
 <html>
 <head>
-<script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
-<script src="mturk.js"></script>
+  <title>Count the People</title>
+  <meta name="author" content="Sophie Zhao">
+  <link rel="stylesheet" href="css/mturk.css" type="text/css">
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+  <script src="mturk.js"></script>
+
 </head>
 <body>
-<form id="mturk_form">
-<label> How many people are in this picture? <input type="text" name="question"></label><br>
-<img src="/images/people2.jpg" alt="HTML5 Icon"> 
-<input type="submit">
-</form>
+  <!-- NAVIGATION -->
+  <div class="contain-to-grid">
+    <nav class="top-bar" data-topbar>
+      <ul class="title-area">
+        <li class="name">
+          <h1>Count the People</a></h1>
+        </li>
+      </ul>
+    </nav>
+  </div>
+
+  <div class="row">
+    <div class="small-7 columns">
+
+      <!-- START FORM -->
+      <form id="mturk_form">
+        <fieldset>
+          <legend>See the example, then answer the questions</legend>
+
+        <div class="example">
+            <h3>EXAMPLE</h3>
+            <label>In the following picture, count the number of...</label><br>
+            <label>FACES = 6</label><br>
+            <label>PEOPLE = 6</label><br>
+            <label>RECOGNIZABLE PEOPLE = 5</label><br>
+            <img class="padding" src="images/example.png" alt="HTML5 Icon">
+        </div>
+
+      <!-- TEXT INPUT -->
+      <div class="count response">
+        <h3>1: In the following picture... 
+        </h3>
+        <label>How many FACES are there?
+            <input type="text" name="question">
+        </label><br>
+        <label>How many PEOPLE are there?
+            <input type="text" name="question">
+        </label><br>
+        <img src="images/people1.jpg" alt="HTML5 Icon">
+        <br><br><br>
+        <label>How many PEOPLE are there?
+            <input type="text" name="question">
+        </label><br>
+        <img src="images/people2.jpg" alt="HTML5 Icon">
+        <br><br><br>
+
+        <label> How many people are in this picture below?
+            <input type="text" name="question">
+        </label><br>
+        <img src="images/people3.jpg" alt="HTML5 Icon">
+        <br><br><br>
+
+        <label> How many people are in this picture below?
+            <input type="text" name="question">
+        </label><br>
+        <img src="images/people4.jpg" alt="HTML5 Icon">
+        <br><br><br>
+
+        <label> How many people are in this picture below?
+            <input type="text" name="question">
+        </label><br>
+        <img src="images/people5.png" alt="HTML5 Icon">
+        <br><br><br>
+
+        <label> How many people are in this picture below?
+            <input type="text" name="question">
+        </label><br>
+        <img src="images/people6.jpg" alt="HTML5 Icon">
+        <br><br><br>
+        <label>How many RECOGNIZABLE PEOPLE below?
+            <input type="text" name="question">
+        </label><br>
+        <img src="images/people7-own.jpg" alt="HTML5 Icon">
+        <br><br><br>
+        <input type="submit">
+
+    <footer class="footer">
+
+    <!-- footer content goes here -->
+
+  </footer>
+
 </body>
 </html>
